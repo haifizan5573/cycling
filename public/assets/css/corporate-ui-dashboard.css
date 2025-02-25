@@ -22613,7 +22613,7 @@ hr.horizontal.gray-light {
   padding-right: 0;
 }
 
-@media all and (-ms-high-contrast: none),
+@media all and (forced-colors: none),
 (-ms-high-contrast: active) {
   .navbar-vertical.navbar-expand-xs>[class*="container"] {
     min-height: none;

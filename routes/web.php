@@ -19,9 +19,17 @@ use App\Http\Controllers\Auth\ForgotPasswordController;
 |
 */
 
+// Route::get('/', function () {
+//     return redirect('/dashboard');
+// })->middleware('auth');
+
 Route::get('/', function () {
-    return redirect('/dashboard');
-})->middleware('auth');
+    return view('dashboard');
+});
+
+Route::get('/apops/{type?}', function () {
+    return view('dashboard');
+})->name('apops');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
